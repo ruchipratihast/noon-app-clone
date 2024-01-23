@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:noonapp/views/home/signup.dart';
+import 'package:noonapp/views/auth/signup.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
