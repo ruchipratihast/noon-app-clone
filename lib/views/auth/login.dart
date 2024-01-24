@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:noonapp/views/auth/signup.dart';
+import 'package:noonapp/views/home/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -117,7 +118,11 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20.0,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(
+                      () => const HomePage(),
+                    );
+                  },
                   child: Container(
                     width: double.maxFinite,
                     height: 50.0,
