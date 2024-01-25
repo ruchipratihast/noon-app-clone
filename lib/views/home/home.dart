@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:noonapp/views/home/categories.dart';
+import 'package:noonapp/views/home/categories2.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,6 +20,11 @@ class _HomePageState extends State<HomePage> {
           Image.asset(
             'assets/banner1.jpg',
           ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const Categories(),
+          const Categories2(),
           const SizedBox(
             height: 8.0,
           ),
