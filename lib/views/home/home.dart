@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:noonapp/views/home/categories.dart';
 import 'package:noonapp/views/home/categories2.dart';
+import 'package:noonapp/views/home/recommended.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -40,6 +41,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          const RecommendedProducts(),
           const SizedBox(
             height: 8.0,
           ),
