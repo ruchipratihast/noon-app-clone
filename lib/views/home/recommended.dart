@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:noonapp/views/home/ProductDetails.dart';
 
 class RecommendedProducts extends StatefulWidget {
   const RecommendedProducts({super.key});
@@ -19,8 +21,6 @@ class _RecommendedProductsState extends State<RecommendedProducts> {
         ),
         scrollDirection: Axis.horizontal,
         children: const [
-          //
-          //
           SizedBox(
             width: 8.0,
           ),
@@ -143,7 +143,17 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Get.to(
+          () => ProductDetail(
+            title: title,
+            mrp: mrp,
+            sp: sp,
+            rating: rating,
+            users: users,
+          ),
+        );
+      },
       child: Container(
         decoration: const BoxDecoration(
           color: Colors.white,
